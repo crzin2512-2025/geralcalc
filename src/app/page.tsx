@@ -1,15 +1,13 @@
 import { DiffDate } from "./components/DiffDate";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
 
 const Page = () => {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full overflow-x-hidden mx-auto">
       <Header />
-      <main className="container mx-auto h-screen bg-red-400">
-        <Hero />
-        <DiffDate/>
+      <main className="container mx-auto min-h-screen flex flex-col items-center justify-center bg-gray-300 overflow-x-hidden">
+        <DiffDate />
       </main>
       <Footer />
     </div>
